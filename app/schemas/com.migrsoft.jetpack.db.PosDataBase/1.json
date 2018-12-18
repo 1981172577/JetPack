@@ -1,0 +1,4222 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 1,
+    "identityHash": "27adb51357e7f879505282b04f9f00c6",
+    "entities": [
+      {
+        "tableName": "abcheckdetail",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `vendorId` INTEGER NOT NULL, `df` INTEGER NOT NULL, `createDate` INTEGER NOT NULL, `modifyDate` INTEGER NOT NULL, `taskNo` TEXT, `orderNo` TEXT, `orderType` INTEGER NOT NULL, `shelfNo` TEXT, `shelfArea` TEXT, `skuCode` TEXT, `skuName` TEXT, `barcode` TEXT, `pluCode` TEXT, `specMemo` TEXT, `skuUnit` TEXT, `quantity` REAL NOT NULL, `brandCode` TEXT, `brandName` TEXT, `firstIcatName` TEXT, `firstIcatCode` TEXT, `secondIcatName` TEXT, `secondIcatCode` TEXT, `checkMan` TEXT, `checkNick` TEXT, `version` TEXT, `thirdIcatName` TEXT, `thirdIcatCode` TEXT, `fourthIcatName` TEXT, `fourthIcatcode` TEXT, `salePrice` REAL NOT NULL, `rowIdx` INTEGER NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "vendorId",
+            "columnName": "vendorId",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "df",
+            "columnName": "df",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "createDate",
+            "columnName": "createDate",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "modifyDate",
+            "columnName": "modifyDate",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "taskNo",
+            "columnName": "taskNo",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "orderNo",
+            "columnName": "orderNo",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "orderType",
+            "columnName": "orderType",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "shelfNo",
+            "columnName": "shelfNo",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "shelfArea",
+            "columnName": "shelfArea",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "skuCode",
+            "columnName": "skuCode",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "skuName",
+            "columnName": "skuName",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "barCode",
+            "columnName": "barcode",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "pluCode",
+            "columnName": "pluCode",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "specMemo",
+            "columnName": "specMemo",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "skuUnit",
+            "columnName": "skuUnit",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "quantity",
+            "columnName": "quantity",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "brandCode",
+            "columnName": "brandCode",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "brandName",
+            "columnName": "brandName",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "firstIcatName",
+            "columnName": "firstIcatName",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "firstIcatCode",
+            "columnName": "firstIcatCode",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "secondIcatName",
+            "columnName": "secondIcatName",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "secondIcatCode",
+            "columnName": "secondIcatCode",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "checkMan",
+            "columnName": "checkMan",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "checkNick",
+            "columnName": "checkNick",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "version",
+            "columnName": "version",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "thirdIcatName",
+            "columnName": "thirdIcatName",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "thirdIcatCode",
+            "columnName": "thirdIcatCode",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "fourthIcatName",
+            "columnName": "fourthIcatName",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "fourthIcatcode",
+            "columnName": "fourthIcatcode",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "salePrice",
+            "columnName": "salePrice",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "rowIdx",
+            "columnName": "rowIdx",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [
+          {
+            "name": "index_abcheckdetail_vendorId_taskNo_orderNo",
+            "unique": false,
+            "columnNames": [
+              "vendorId",
+              "taskNo",
+              "orderNo"
+            ],
+            "createSql": "CREATE  INDEX `index_abcheckdetail_vendorId_taskNo_orderNo` ON `${TABLE_NAME}` (`vendorId`, `taskNo`, `orderNo`)"
+          }
+        ],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "abcheckorder",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `vendorId` INTEGER NOT NULL, `taskNo` TEXT, `orderNo` TEXT, `shelfNo` TEXT, `shelfArea` TEXT, `bizDate` TEXT, `srcPos` TEXT, `startCheckDate` TEXT, `endCheckDate` TEXT, `timeConsume` INTEGER NOT NULL, `orderType` INTEGER NOT NULL, `firstFlag` INTEGER NOT NULL, `organCode` TEXT, `organName` TEXT, `storeCode` TEXT, `storeName` TEXT, `status` INTEGER NOT NULL, `taskStatus` INTEGER NOT NULL, `orderAcount` REAL NOT NULL, `orderKinds` REAL NOT NULL, `approver` TEXT, `approverTime` TEXT, `memo` TEXT, `creator` TEXT, `checkMan` TEXT, `checkNick` TEXT, `mender` TEXT, `df` INTEGER NOT NULL, `createDate` TEXT, `modifyDate` TEXT, `version` INTEGER NOT NULL, `checkType` INTEGER NOT NULL, `uploadCount` INTEGER NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "vendorId",
+            "columnName": "vendorId",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "taskNo",
+            "columnName": "taskNo",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "orderNo",
+            "columnName": "orderNo",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "shelfNo",
+            "columnName": "shelfNo",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "shelfArea",
+            "columnName": "shelfArea",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "bizDate",
+            "columnName": "bizDate",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "srcPos",
+            "columnName": "srcPos",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "startCheckDate",
+            "columnName": "startCheckDate",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "endCheckDate",
+            "columnName": "endCheckDate",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "timeConsume",
+            "columnName": "timeConsume",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "orderType",
+            "columnName": "orderType",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "firstFlag",
+            "columnName": "firstFlag",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "organCode",
+            "columnName": "organCode",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "organName",
+            "columnName": "organName",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "storeCode",
+            "columnName": "storeCode",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "storeName",
+            "columnName": "storeName",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "status",
+            "columnName": "status",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "taskStatus",
+            "columnName": "taskStatus",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "orderAcount",
+            "columnName": "orderAcount",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "orderKinds",
+            "columnName": "orderKinds",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "approver",
+            "columnName": "approver",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "approverTime",
+            "columnName": "approverTime",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "memo",
+            "columnName": "memo",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "creator",
+            "columnName": "creator",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "checkMan",
+            "columnName": "checkMan",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "checkNick",
+            "columnName": "checkNick",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "mender",
+            "columnName": "mender",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "df",
+            "columnName": "df",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "createDate",
+            "columnName": "createDate",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "modifyDate",
+            "columnName": "modifyDate",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "version",
+            "columnName": "version",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "checkType",
+            "columnName": "checkType",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "uploadCount",
+            "columnName": "uploadCount",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [
+          {
+            "name": "index_abcheckorder_vendorId_taskNo_orderNo",
+            "unique": true,
+            "columnNames": [
+              "vendorId",
+              "taskNo",
+              "orderNo"
+            ],
+            "createSql": "CREATE UNIQUE INDEX `index_abcheckorder_vendorId_taskNo_orderNo` ON `${TABLE_NAME}` (`vendorId`, `taskNo`, `orderNo`)"
+          }
+        ],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "adjustdetail",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `uid` INTEGER NOT NULL, `vendorId` INTEGER NOT NULL, `orderNo` TEXT, `skuCode` TEXT, `skuName` TEXT, `unit` TEXT, `unitType` INTEGER NOT NULL, `purchasePrice` REAL NOT NULL, `salePrice` REAL NOT NULL, `deliverPrice` REAL NOT NULL, `wholesalePrice` REAL NOT NULL, `distPrice` REAL NOT NULL, `lowPrice` REAL NOT NULL, `vipPrice` REAL NOT NULL, `vipPrice1` REAL NOT NULL, `vipPrice2` REAL NOT NULL, `purchasePriceNew` REAL NOT NULL, `salePriceNew` REAL NOT NULL, `deliverPriceNew` REAL NOT NULL, `wholesalePriceNew` REAL NOT NULL, `lowPriceNew` REAL NOT NULL, `vipPriceNew` REAL NOT NULL, `vipPrice1New` REAL NOT NULL, `vipPrice2New` REAL NOT NULL, `viewOrder` INTEGER NOT NULL, `memo` TEXT, `df` INTEGER NOT NULL, `createDate` TEXT, `modifyDate` TEXT, `barcode` TEXT, `weiPrice` REAL NOT NULL, `weiPriceNew` REAL NOT NULL, `distPriceNew` REAL NOT NULL, `pluCode` TEXT, `shortName` TEXT, `location` TEXT, `brandCode` TEXT, `brandName` TEXT, `icatCode` TEXT, `icatName` TEXT, `saleType` INTEGER NOT NULL, `skuStatus` INTEGER NOT NULL, `oldPrice` REAL NOT NULL, `newPrice` REAL NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "uid",
+            "columnName": "uid",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "vendorId",
+            "columnName": "vendorId",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "orderNo",
+            "columnName": "orderNo",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "skuCode",
+            "columnName": "skuCode",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "skuName",
+            "columnName": "skuName",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "unit",
+            "columnName": "unit",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "unitType",
+            "columnName": "unitType",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "purchasePrice",
+            "columnName": "purchasePrice",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "salePrice",
+            "columnName": "salePrice",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "deliverPrice",
+            "columnName": "deliverPrice",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "wholesalePrice",
+            "columnName": "wholesalePrice",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "distPrice",
+            "columnName": "distPrice",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "lowPrice",
+            "columnName": "lowPrice",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "vipPrice",
+            "columnName": "vipPrice",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "vipPrice1",
+            "columnName": "vipPrice1",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "vipPrice2",
+            "columnName": "vipPrice2",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "purchasePriceNew",
+            "columnName": "purchasePriceNew",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "salePriceNew",
+            "columnName": "salePriceNew",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "deliverPriceNew",
+            "columnName": "deliverPriceNew",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "wholesalePriceNew",
+            "columnName": "wholesalePriceNew",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "lowPriceNew",
+            "columnName": "lowPriceNew",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "vipPriceNew",
+            "columnName": "vipPriceNew",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "vipPrice1New",
+            "columnName": "vipPrice1New",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "vipPrice2New",
+            "columnName": "vipPrice2New",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "viewOrder",
+            "columnName": "viewOrder",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "memo",
+            "columnName": "memo",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "df",
+            "columnName": "df",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "createDate",
+            "columnName": "createDate",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "modifyDate",
+            "columnName": "modifyDate",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "barcode",
+            "columnName": "barcode",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "weiPrice",
+            "columnName": "weiPrice",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "weiPriceNew",
+            "columnName": "weiPriceNew",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "distPriceNew",
+            "columnName": "distPriceNew",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "pluCode",
+            "columnName": "pluCode",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "shortName",
+            "columnName": "shortName",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "location",
+            "columnName": "location",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "brandCode",
+            "columnName": "brandCode",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "brandName",
+            "columnName": "brandName",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "icatCode",
+            "columnName": "icatCode",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "icatName",
+            "columnName": "icatName",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "saleType",
+            "columnName": "saleType",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "skuStatus",
+            "columnName": "skuStatus",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "oldPrice",
+            "columnName": "oldPrice",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "newPrice",
+            "columnName": "newPrice",
+            "affinity": "REAL",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [
+          {
+            "name": "index_adjustdetail_vendorId",
+            "unique": false,
+            "columnNames": [
+              "vendorId"
+            ],
+            "createSql": "CREATE  INDEX `index_adjustdetail_vendorId` ON `${TABLE_NAME}` (`vendorId`)"
+          },
+          {
+            "name": "index_adjustdetail_orderNo",
+            "unique": false,
+            "columnNames": [
+              "orderNo"
+            ],
+            "createSql": "CREATE  INDEX `index_adjustdetail_orderNo` ON `${TABLE_NAME}` (`orderNo`)"
+          }
+        ],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "adjustorder",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `vendorId` INTEGER NOT NULL, `orderNo` TEXT, `startDate` TEXT, `adjusted` INTEGER NOT NULL, `status` INTEGER NOT NULL, `scopeFlag` INTEGER NOT NULL, `finalApprover` TEXT, `finalApproveTime` TEXT, `memo` TEXT, `df` INTEGER NOT NULL, `createDate` TEXT, `modifyDate` TEXT, `creator` TEXT, `mender` TEXT, `version` INTEGER NOT NULL, `organCode` TEXT, `storeCode` TEXT, `adjustPrices` TEXT, `isupload` INTEGER NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "vendorId",
+            "columnName": "vendorId",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "orderNo",
+            "columnName": "orderNo",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "startDate",
+            "columnName": "startDate",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "adjusted",
+            "columnName": "adjusted",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "status",
+            "columnName": "status",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "scopeFlag",
+            "columnName": "scopeFlag",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "finalApprover",
+            "columnName": "finalApprover",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "finalApproveTime",
+            "columnName": "finalApproveTime",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "memo",
+            "columnName": "memo",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "df",
+            "columnName": "df",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "createDate",
+            "columnName": "createDate",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "modifyDate",
+            "columnName": "modifyDate",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "creator",
+            "columnName": "creator",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "mender",
+            "columnName": "mender",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "version",
+            "columnName": "version",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "organCode",
+            "columnName": "organCode",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "storeCode",
+            "columnName": "storeCode",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "adjustPrices",
+            "columnName": "adjustPrices",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "isupload",
+            "columnName": "isupload",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [
+          {
+            "name": "index_adjustorder_vendorId_orderNo",
+            "unique": true,
+            "columnNames": [
+              "vendorId",
+              "orderNo"
+            ],
+            "createSql": "CREATE UNIQUE INDEX `index_adjustorder_vendorId_orderNo` ON `${TABLE_NAME}` (`vendorId`, `orderNo`)"
+          }
+        ],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "checktask",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `vendorId` INTEGER NOT NULL, `taskNo` TEXT, `checkType` INTEGER NOT NULL, `organCode` TEXT, `organName` TEXT, `storeCode` TEXT, `storeName` TEXT, `objectCode` TEXT, `objectName` TEXT, `checkStatus` INTEGER NOT NULL, `status` INTEGER NOT NULL, `approver` TEXT, `approverTime` TEXT, `referenced` INTEGER NOT NULL, `memo` TEXT, `creator` TEXT, `mender` TEXT, `df` INTEGER NOT NULL, `createDate` TEXT, `modifyDate` TEXT, `version` INTEGER NOT NULL, `bizDate` TEXT, `locked` INTEGER NOT NULL, `balanceDate` TEXT, `menderName` TEXT, `approverName` TEXT, `creatorName` TEXT, `sysMemo` TEXT, `approveOpinion` TEXT)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "vendorId",
+            "columnName": "vendorId",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "taskNo",
+            "columnName": "taskNo",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "checkType",
+            "columnName": "checkType",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "organCode",
+            "columnName": "organCode",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "organName",
+            "columnName": "organName",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "storeCode",
+            "columnName": "storeCode",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "storeName",
+            "columnName": "storeName",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "objectCode",
+            "columnName": "objectCode",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "objectName",
+            "columnName": "objectName",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "checkStatus",
+            "columnName": "checkStatus",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "status",
+            "columnName": "status",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "approver",
+            "columnName": "approver",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "approverTime",
+            "columnName": "approverTime",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "referenced",
+            "columnName": "referenced",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "memo",
+            "columnName": "memo",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "creator",
+            "columnName": "creator",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "mender",
+            "columnName": "mender",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "df",
+            "columnName": "df",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "createDate",
+            "columnName": "createDate",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "modifyDate",
+            "columnName": "modifyDate",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "version",
+            "columnName": "version",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "bizDate",
+            "columnName": "bizDate",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "locked",
+            "columnName": "locked",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "balanceDate",
+            "columnName": "balanceDate",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "menderName",
+            "columnName": "menderName",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "approverName",
+            "columnName": "approverName",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "creatorName",
+            "columnName": "creatorName",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "sysMemo",
+            "columnName": "sysMemo",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "approveOpinion",
+            "columnName": "approveOpinion",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [
+          {
+            "name": "index_checktask_vendorId_taskNo",
+            "unique": true,
+            "columnNames": [
+              "vendorId",
+              "taskNo"
+            ],
+            "createSql": "CREATE UNIQUE INDEX `index_checktask_vendorId_taskNo` ON `${TABLE_NAME}` (`vendorId`, `taskNo`)"
+          }
+        ],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "checktaskdetail",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `vendorId` INTEGER NOT NULL, `taskNo` TEXT, `checkType` INTEGER NOT NULL, `objectCode` TEXT, `objectName` TEXT, `parentObjectCode` TEXT, `parentObjectName` TEXT, `topObjectCode` TEXT, `topObjectName` TEXT, `level` TEXT, `barcode` TEXT, `memo` TEXT, `specMemo` TEXT, `creator` TEXT, `mender` TEXT, `df` INTEGER NOT NULL, `createDate` TEXT, `modifyDate` TEXT, `version` INTEGER NOT NULL, `stockUnit` TEXT, `icatCode` TEXT, `icatName` TEXT)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "vendorId",
+            "columnName": "vendorId",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "taskNo",
+            "columnName": "taskNo",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "checkType",
+            "columnName": "checkType",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "objectCode",
+            "columnName": "objectCode",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "objectName",
+            "columnName": "objectName",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "parentObjectCode",
+            "columnName": "parentObjectCode",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "parentObjectName",
+            "columnName": "parentObjectName",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "topObjectCode",
+            "columnName": "topObjectCode",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "topObjectName",
+            "columnName": "topObjectName",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "level",
+            "columnName": "level",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "barcode",
+            "columnName": "barcode",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "memo",
+            "columnName": "memo",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "specMemo",
+            "columnName": "specMemo",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "creator",
+            "columnName": "creator",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "mender",
+            "columnName": "mender",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "df",
+            "columnName": "df",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "createDate",
+            "columnName": "createDate",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "modifyDate",
+            "columnName": "modifyDate",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "version",
+            "columnName": "version",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "stockUnit",
+            "columnName": "stockUnit",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "icatCode",
+            "columnName": "icatCode",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "icatName",
+            "columnName": "icatName",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [
+          {
+            "name": "idx_checktaskdetail_ids",
+            "unique": true,
+            "columnNames": [
+              "vendorId",
+              "taskNo",
+              "objectCode"
+            ],
+            "createSql": "CREATE UNIQUE INDEX `idx_checktaskdetail_ids` ON `${TABLE_NAME}` (`vendorId`, `taskNo`, `objectCode`)"
+          }
+        ],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "member",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `vendorId` INTEGER NOT NULL, `memNo` TEXT, `memPin` TEXT, `memPwd` TEXT, `organCode` TEXT, `organName` TEXT, `storeCode` TEXT, `storeName` TEXT, `wdStoreCode` TEXT, `memName` TEXT, `nickName` TEXT, `mobileNo` TEXT, `balance` REAL NOT NULL, `memPoint` REAL NOT NULL, `consumeAmount` REAL NOT NULL, `presentAmount` REAL NOT NULL, `rechargeAmount` REAL NOT NULL, `memPointAmount` REAL NOT NULL, `creditLine` REAL NOT NULL, `status` INTEGER NOT NULL, `needPwdFlag` INTEGER NOT NULL, `gender` INTEGER NOT NULL, `memCatCode` TEXT, `provinceCode` TEXT, `cityCode` TEXT, `regionCode` TEXT, `memAddress` TEXT, `birthday` TEXT, `headImg` TEXT, `wxAddress` TEXT, `df` INTEGER NOT NULL, `memo` TEXT, `createDate` TEXT, `modifyDate` TEXT, `parentMemPin` TEXT, `barCodeUrl` TEXT, `QRCodeUrl` TEXT, `QRCodeValue` TEXT, `cardNo` TEXT, `cardId` TEXT, `unionid` TEXT, `reference` TEXT, `memIDCardNo` TEXT)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "vendorId",
+            "columnName": "vendorId",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "memNo",
+            "columnName": "memNo",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "memPin",
+            "columnName": "memPin",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "memPwd",
+            "columnName": "memPwd",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "organCode",
+            "columnName": "organCode",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "organName",
+            "columnName": "organName",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "storeCode",
+            "columnName": "storeCode",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "storeName",
+            "columnName": "storeName",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "wdStoreCode",
+            "columnName": "wdStoreCode",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "memName",
+            "columnName": "memName",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "nickName",
+            "columnName": "nickName",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "mobileNo",
+            "columnName": "mobileNo",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "balance",
+            "columnName": "balance",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "memPoint",
+            "columnName": "memPoint",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "consumeAmount",
+            "columnName": "consumeAmount",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "presentAmount",
+            "columnName": "presentAmount",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "rechargeAmount",
+            "columnName": "rechargeAmount",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "memPointAmount",
+            "columnName": "memPointAmount",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "creditLine",
+            "columnName": "creditLine",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "status",
+            "columnName": "status",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "needPwdFlag",
+            "columnName": "needPwdFlag",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "gender",
+            "columnName": "gender",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "memCatCode",
+            "columnName": "memCatCode",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "provinceCode",
+            "columnName": "provinceCode",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "cityCode",
+            "columnName": "cityCode",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "regionCode",
+            "columnName": "regionCode",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "memAddress",
+            "columnName": "memAddress",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "birthday",
+            "columnName": "birthday",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "headImg",
+            "columnName": "headImg",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "wxAddress",
+            "columnName": "wxAddress",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "df",
+            "columnName": "df",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "memo",
+            "columnName": "memo",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "createDate",
+            "columnName": "createDate",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "modifyDate",
+            "columnName": "modifyDate",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "parentMemPin",
+            "columnName": "parentMemPin",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "barCodeUrl",
+            "columnName": "barCodeUrl",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "QRCodeUrl",
+            "columnName": "QRCodeUrl",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "QRCodeValue",
+            "columnName": "QRCodeValue",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "cardNo",
+            "columnName": "cardNo",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "cardId",
+            "columnName": "cardId",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "unionid",
+            "columnName": "unionid",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "reference",
+            "columnName": "reference",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "memIDCardNo",
+            "columnName": "memIDCardNo",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [
+          {
+            "name": "idx_member_memPin",
+            "unique": true,
+            "columnNames": [
+              "memPin"
+            ],
+            "createSql": "CREATE UNIQUE INDEX `idx_member_memPin` ON `${TABLE_NAME}` (`memPin`)"
+          },
+          {
+            "name": "idx_member_memNo",
+            "unique": false,
+            "columnNames": [
+              "memNo"
+            ],
+            "createSql": "CREATE  INDEX `idx_member_memNo` ON `${TABLE_NAME}` (`memNo`)"
+          },
+          {
+            "name": "idx_member_cardNo",
+            "unique": false,
+            "columnNames": [
+              "cardNo"
+            ],
+            "createSql": "CREATE  INDEX `idx_member_cardNo` ON `${TABLE_NAME}` (`cardNo`)"
+          },
+          {
+            "name": "idx_member_cardId",
+            "unique": false,
+            "columnNames": [
+              "cardId"
+            ],
+            "createSql": "CREATE  INDEX `idx_member_cardId` ON `${TABLE_NAME}` (`cardId`)"
+          }
+        ],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "memcat",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `vendorId` INTEGER NOT NULL, `catCode` TEXT, `catName` TEXT, `doScore` INTEGER NOT NULL, `onsaleType` INTEGER NOT NULL, `rate` REAL NOT NULL, `need` INTEGER NOT NULL, `greaterAmount` REAL NOT NULL, `combineFlag` INTEGER NOT NULL, `greaterNum` REAL NOT NULL, `pointAmount` REAL NOT NULL, `consumeAmount` REAL NOT NULL, `rechargeAmount` REAL NOT NULL, `needPwdFlag` INTEGER NOT NULL, `df` INTEGER NOT NULL, `memo` TEXT, `createDate` TEXT, `modifyDate` TEXT)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "vendorId",
+            "columnName": "vendorId",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "catCode",
+            "columnName": "catCode",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "catName",
+            "columnName": "catName",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "doScore",
+            "columnName": "doScore",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "onsaleType",
+            "columnName": "onsaleType",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "rate",
+            "columnName": "rate",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "need",
+            "columnName": "need",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "greaterAmount",
+            "columnName": "greaterAmount",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "combineFlag",
+            "columnName": "combineFlag",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "greaterNum",
+            "columnName": "greaterNum",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "pointAmount",
+            "columnName": "pointAmount",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "consumeAmount",
+            "columnName": "consumeAmount",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "rechargeAmount",
+            "columnName": "rechargeAmount",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "needPwdFlag",
+            "columnName": "needPwdFlag",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "df",
+            "columnName": "df",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "memo",
+            "columnName": "memo",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "createDate",
+            "columnName": "createDate",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "modifyDate",
+            "columnName": "modifyDate",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [
+          {
+            "name": "idx_memCat_ids",
+            "unique": false,
+            "columnNames": [
+              "vendorId",
+              "catCode"
+            ],
+            "createSql": "CREATE  INDEX `idx_memCat_ids` ON `${TABLE_NAME}` (`vendorId`, `catCode`)"
+          }
+        ],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "menu",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `menuCode` TEXT, `menuName` TEXT, `menuUrl` TEXT, `viewOrder` INTEGER NOT NULL, `location` INTEGER NOT NULL, `parentCode` TEXT, `sysCode` TEXT, `menuLevel` INTEGER NOT NULL, `logo` TEXT, `memo` TEXT, `df` INTEGER NOT NULL, `createDate` TEXT, `modifyDate` TEXT)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "menuCode",
+            "columnName": "menuCode",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "menuName",
+            "columnName": "menuName",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "menuUrl",
+            "columnName": "menuUrl",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "viewOrder",
+            "columnName": "viewOrder",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "location",
+            "columnName": "location",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "parentCode",
+            "columnName": "parentCode",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "sysCode",
+            "columnName": "sysCode",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "menuLevel",
+            "columnName": "menuLevel",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "logo",
+            "columnName": "logo",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "memo",
+            "columnName": "memo",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "df",
+            "columnName": "df",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "createDate",
+            "columnName": "createDate",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "modifyDate",
+            "columnName": "modifyDate",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [
+          {
+            "name": "idx_menu_menuCode",
+            "unique": true,
+            "columnNames": [
+              "menuCode"
+            ],
+            "createSql": "CREATE UNIQUE INDEX `idx_menu_menuCode` ON `${TABLE_NAME}` (`menuCode`)"
+          },
+          {
+            "name": "idx_menu_parentCode",
+            "unique": false,
+            "columnNames": [
+              "parentCode"
+            ],
+            "createSql": "CREATE  INDEX `idx_menu_parentCode` ON `${TABLE_NAME}` (`parentCode`)"
+          },
+          {
+            "name": "idx_menu_sysCode",
+            "unique": false,
+            "columnNames": [
+              "sysCode"
+            ],
+            "createSql": "CREATE  INDEX `idx_menu_sysCode` ON `${TABLE_NAME}` (`sysCode`)"
+          }
+        ],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "parameter",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `createDate` TEXT, `modifyDate` TEXT, `pcode` TEXT, `cname` TEXT, `pvalue` TEXT, `pflag` INTEGER NOT NULL, `pmoudle` TEXT)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "createDate",
+            "columnName": "createDate",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "modifyDate",
+            "columnName": "modifyDate",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "pcode",
+            "columnName": "pcode",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "cname",
+            "columnName": "cname",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "pvalue",
+            "columnName": "pvalue",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "pflag",
+            "columnName": "pflag",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "pmoudle",
+            "columnName": "pmoudle",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [
+          {
+            "name": "idx_sys_parameter_pcode",
+            "unique": true,
+            "columnNames": [
+              "pcode"
+            ],
+            "createSql": "CREATE UNIQUE INDEX `idx_sys_parameter_pcode` ON `${TABLE_NAME}` (`pcode`)"
+          }
+        ],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "register",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `vendorId` INTEGER NOT NULL, `createDate` TEXT, `modifyDate` TEXT, `version` INTEGER NOT NULL, `creator` TEXT, `mender` TEXT, `organCode` TEXT, `organName` TEXT, `storeCode` TEXT, `storeName` TEXT, `rcode` TEXT, `rname` TEXT, `ip` TEXT, `mac` TEXT, `inuse` INTEGER NOT NULL, `rtype` INTEGER NOT NULL, `bizType` INTEGER NOT NULL, `posVersion` TEXT, `updateDate` TEXT, `isbind` INTEGER NOT NULL, `memo` TEXT, `df` INTEGER NOT NULL, `uid` TEXT, `mainFlag` INTEGER NOT NULL, `mainIp` TEXT)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "vendorId",
+            "columnName": "vendorId",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "createDate",
+            "columnName": "createDate",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "modifyDate",
+            "columnName": "modifyDate",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "version",
+            "columnName": "version",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "creator",
+            "columnName": "creator",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "mender",
+            "columnName": "mender",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "organCode",
+            "columnName": "organCode",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "organName",
+            "columnName": "organName",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "storeCode",
+            "columnName": "storeCode",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "storeName",
+            "columnName": "storeName",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "rcode",
+            "columnName": "rcode",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "rname",
+            "columnName": "rname",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "ip",
+            "columnName": "ip",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "mac",
+            "columnName": "mac",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "inuse",
+            "columnName": "inuse",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "rtype",
+            "columnName": "rtype",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "bizType",
+            "columnName": "bizType",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "posVersion",
+            "columnName": "posVersion",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "updateDate",
+            "columnName": "updateDate",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "isbind",
+            "columnName": "isbind",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "memo",
+            "columnName": "memo",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "df",
+            "columnName": "df",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "uid",
+            "columnName": "uid",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "mainFlag",
+            "columnName": "mainFlag",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "mainIp",
+            "columnName": "mainIp",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [
+          {
+            "name": "idx_register_idrcode",
+            "unique": true,
+            "columnNames": [
+              "vendorId",
+              "rcode"
+            ],
+            "createSql": "CREATE UNIQUE INDEX `idx_register_idrcode` ON `${TABLE_NAME}` (`vendorId`, `rcode`)"
+          },
+          {
+            "name": "idx_register_rcode",
+            "unique": false,
+            "columnNames": [
+              "rcode"
+            ],
+            "createSql": "CREATE  INDEX `idx_register_rcode` ON `${TABLE_NAME}` (`rcode`)"
+          },
+          {
+            "name": "idx_register_storeCode",
+            "unique": false,
+            "columnNames": [
+              "storeCode"
+            ],
+            "createSql": "CREATE  INDEX `idx_register_storeCode` ON `${TABLE_NAME}` (`storeCode`)"
+          },
+          {
+            "name": "idx_register_organCode",
+            "unique": false,
+            "columnNames": [
+              "organCode"
+            ],
+            "createSql": "CREATE  INDEX `idx_register_organCode` ON `${TABLE_NAME}` (`organCode`)"
+          }
+        ],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "role",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `vendorId` INTEGER NOT NULL, `roleName` TEXT, `roleFlag` INTEGER NOT NULL, `memo` TEXT, `df` INTEGER NOT NULL, `createDate` TEXT, `modifyDate` TEXT, `roleId` INTEGER NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "vendorId",
+            "columnName": "vendorId",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "roleName",
+            "columnName": "roleName",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "roleFlag",
+            "columnName": "roleFlag",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "memo",
+            "columnName": "memo",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "df",
+            "columnName": "df",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "createDate",
+            "columnName": "createDate",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "modifyDate",
+            "columnName": "modifyDate",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "roleId",
+            "columnName": "roleId",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [
+          {
+            "name": "idx_vendorRole_vendorId",
+            "unique": false,
+            "columnNames": [
+              "vendorId"
+            ],
+            "createSql": "CREATE  INDEX `idx_vendorRole_vendorId` ON `${TABLE_NAME}` (`vendorId`)"
+          }
+        ],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "rolemenu",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `roleId` INTEGER NOT NULL, `menuCode` TEXT, `df` INTEGER NOT NULL, `createDate` TEXT, `modifyDate` TEXT, `vendorId` INTEGER NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "roleId",
+            "columnName": "roleId",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "menuCode",
+            "columnName": "menuCode",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "df",
+            "columnName": "df",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "createDate",
+            "columnName": "createDate",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "modifyDate",
+            "columnName": "modifyDate",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "vendorId",
+            "columnName": "vendorId",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [
+          {
+            "name": "idx_vendorRoleMenu_menuCode",
+            "unique": false,
+            "columnNames": [
+              "menuCode"
+            ],
+            "createSql": "CREATE  INDEX `idx_vendorRoleMenu_menuCode` ON `${TABLE_NAME}` (`menuCode`)"
+          },
+          {
+            "name": "idx_vendorRoleMenu_roleId",
+            "unique": false,
+            "columnNames": [
+              "roleId"
+            ],
+            "createSql": "CREATE  INDEX `idx_vendorRoleMenu_roleId` ON `${TABLE_NAME}` (`roleId`)"
+          }
+        ],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "saprameter",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `vendorId` INTEGER NOT NULL, `paramCode` TEXT, `paramName` TEXT, `paramValue` TEXT, `usable` INTEGER NOT NULL, `subsysCode` TEXT, `valueType` INTEGER NOT NULL, `selCode` TEXT, `visable` INTEGER NOT NULL, `revisable` INTEGER NOT NULL, `memo` TEXT, `df` INTEGER NOT NULL, `createDate` TEXT, `modifyDate` TEXT)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "vendorId",
+            "columnName": "vendorId",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "paramCode",
+            "columnName": "paramCode",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "paramName",
+            "columnName": "paramName",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "paramValue",
+            "columnName": "paramValue",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "usable",
+            "columnName": "usable",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "subsysCode",
+            "columnName": "subsysCode",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "valueType",
+            "columnName": "valueType",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "selCode",
+            "columnName": "selCode",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "visable",
+            "columnName": "visable",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "revisable",
+            "columnName": "revisable",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "memo",
+            "columnName": "memo",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "df",
+            "columnName": "df",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "createDate",
+            "columnName": "createDate",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "modifyDate",
+            "columnName": "modifyDate",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [
+          {
+            "name": "idx_sparameter_syscode",
+            "unique": false,
+            "columnNames": [
+              "subsysCode"
+            ],
+            "createSql": "CREATE  INDEX `idx_sparameter_syscode` ON `${TABLE_NAME}` (`subsysCode`)"
+          }
+        ],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "sku",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `vendorId` INTEGER NOT NULL, `storeCode` TEXT, `storeName` TEXT, `skuCode` TEXT, `skuName` TEXT, `barcode` TEXT, `helpCode` TEXT, `stockUnit` TEXT, `otherUnit` INTEGER NOT NULL, `plusCode` TEXT, `firstCatCode` INTEGER NOT NULL, `secondCatCode` INTEGER NOT NULL, `thirdCatCode` INTEGER NOT NULL, `catCode` INTEGER NOT NULL, `catName` TEXT, `brandName` TEXT, `supName` TEXT, `icatName` TEXT, `firstBrandCode` TEXT, `secondBrandCode` TEXT, `thirdBrandCode` TEXT, `brandCode` TEXT, `supCode` TEXT, `firstIcatCode` TEXT, `secondIcatCode` TEXT, `thirdIcatCode` TEXT, `fourthIcatCode` TEXT, `fiveIcatCode` TEXT, `icatCode` TEXT, `purchasePrice` REAL NOT NULL, `salePrice` REAL NOT NULL, `deliverPrice` REAL NOT NULL, `weiPrice` REAL NOT NULL, `distPrice` REAL NOT NULL, `wholesalePrice` REAL NOT NULL, `lowPrice` REAL NOT NULL, `vipPrice` REAL NOT NULL, `vipPrice1` REAL NOT NULL, `vipPrice2` REAL NOT NULL, `doBargain` INTEGER NOT NULL, `doDiscount` INTEGER NOT NULL, `doPresent` INTEGER NOT NULL, `skuStatus` INTEGER NOT NULL, `ecomStatus` INTEGER NOT NULL, `memo` TEXT, `specMemo` TEXT, `validDays` INTEGER NOT NULL, `location` TEXT, `df` INTEGER NOT NULL, `createDate` TEXT, `modifyDate` TEXT, `version` INTEGER NOT NULL, `doScore` INTEGER NOT NULL, `score` REAL NOT NULL, `feeType` INTEGER NOT NULL, `fee` REAL NOT NULL, `chargeType` INTEGER NOT NULL, `charge` REAL NOT NULL, `itemCode` TEXT, `itemType` INTEGER NOT NULL, `bizType` INTEGER NOT NULL, `saleType` INTEGER NOT NULL, `attrOne` TEXT, `attrTwo` TEXT, `attrThree` TEXT, `attrOneValue` TEXT, `attrTwoValue` TEXT, `attrThreeValue` TEXT, `imgPathOne` TEXT, `imgPathTwo` TEXT, `imgPathThree` TEXT, `pluCode` TEXT, `purchaseTax` REAL NOT NULL, `saleTax` REAL NOT NULL, `discount` REAL NOT NULL, `mangeStock` INTEGER NOT NULL, `posCatCode` TEXT)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "vendorId",
+            "columnName": "vendorId",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "storeCode",
+            "columnName": "storeCode",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "storeName",
+            "columnName": "storeName",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "skuCode",
+            "columnName": "skuCode",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "skuName",
+            "columnName": "skuName",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "barcode",
+            "columnName": "barcode",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "helpCode",
+            "columnName": "helpCode",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "stockUnit",
+            "columnName": "stockUnit",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "otherUnit",
+            "columnName": "otherUnit",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "plusCode",
+            "columnName": "plusCode",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "firstCatCode",
+            "columnName": "firstCatCode",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "secondCatCode",
+            "columnName": "secondCatCode",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "thirdCatCode",
+            "columnName": "thirdCatCode",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "catCode",
+            "columnName": "catCode",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "catName",
+            "columnName": "catName",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "brandName",
+            "columnName": "brandName",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "supName",
+            "columnName": "supName",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "icatName",
+            "columnName": "icatName",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "firstBrandCode",
+            "columnName": "firstBrandCode",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "secondBrandCode",
+            "columnName": "secondBrandCode",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "thirdBrandCode",
+            "columnName": "thirdBrandCode",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "brandCode",
+            "columnName": "brandCode",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "supCode",
+            "columnName": "supCode",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "firstIcatCode",
+            "columnName": "firstIcatCode",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "secondIcatCode",
+            "columnName": "secondIcatCode",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "thirdIcatCode",
+            "columnName": "thirdIcatCode",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "fourthIcatCode",
+            "columnName": "fourthIcatCode",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "fiveIcatCode",
+            "columnName": "fiveIcatCode",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "icatCode",
+            "columnName": "icatCode",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "purchasePrice",
+            "columnName": "purchasePrice",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "salePrice",
+            "columnName": "salePrice",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "deliverPrice",
+            "columnName": "deliverPrice",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "weiPrice",
+            "columnName": "weiPrice",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "distPrice",
+            "columnName": "distPrice",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "wholesalePrice",
+            "columnName": "wholesalePrice",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "lowPrice",
+            "columnName": "lowPrice",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "vipPrice",
+            "columnName": "vipPrice",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "vipPrice1",
+            "columnName": "vipPrice1",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "vipPrice2",
+            "columnName": "vipPrice2",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "doBargain",
+            "columnName": "doBargain",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "doDiscount",
+            "columnName": "doDiscount",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "doPresent",
+            "columnName": "doPresent",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "skuStatus",
+            "columnName": "skuStatus",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "ecomStatus",
+            "columnName": "ecomStatus",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "memo",
+            "columnName": "memo",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "specMemo",
+            "columnName": "specMemo",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "validDays",
+            "columnName": "validDays",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "location",
+            "columnName": "location",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "df",
+            "columnName": "df",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "createDate",
+            "columnName": "createDate",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "modifyDate",
+            "columnName": "modifyDate",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "version",
+            "columnName": "version",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "doScore",
+            "columnName": "doScore",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "score",
+            "columnName": "score",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "feeType",
+            "columnName": "feeType",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "fee",
+            "columnName": "fee",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "chargeType",
+            "columnName": "chargeType",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "charge",
+            "columnName": "charge",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "itemCode",
+            "columnName": "itemCode",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "itemType",
+            "columnName": "itemType",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "bizType",
+            "columnName": "bizType",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "saleType",
+            "columnName": "saleType",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "attrOne",
+            "columnName": "attrOne",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "attrTwo",
+            "columnName": "attrTwo",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "attrThree",
+            "columnName": "attrThree",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "attrOneValue",
+            "columnName": "attrOneValue",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "attrTwoValue",
+            "columnName": "attrTwoValue",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "attrThreeValue",
+            "columnName": "attrThreeValue",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "imgPathOne",
+            "columnName": "imgPathOne",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "imgPathTwo",
+            "columnName": "imgPathTwo",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "imgPathThree",
+            "columnName": "imgPathThree",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "pluCode",
+            "columnName": "pluCode",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "purchaseTax",
+            "columnName": "purchaseTax",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "saleTax",
+            "columnName": "saleTax",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "discount",
+            "columnName": "discount",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "mangeStock",
+            "columnName": "mangeStock",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "posCatCode",
+            "columnName": "posCatCode",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [
+          {
+            "name": "idx_storeSku_vendorId",
+            "unique": false,
+            "columnNames": [
+              "vendorId"
+            ],
+            "createSql": "CREATE  INDEX `idx_storeSku_vendorId` ON `${TABLE_NAME}` (`vendorId`)"
+          },
+          {
+            "name": "idx_storeSku_skuCode",
+            "unique": false,
+            "columnNames": [
+              "skuCode"
+            ],
+            "createSql": "CREATE  INDEX `idx_storeSku_skuCode` ON `${TABLE_NAME}` (`skuCode`)"
+          },
+          {
+            "name": "idx_storeSku_storeCode",
+            "unique": false,
+            "columnNames": [
+              "storeCode"
+            ],
+            "createSql": "CREATE  INDEX `idx_storeSku_storeCode` ON `${TABLE_NAME}` (`storeCode`)"
+          },
+          {
+            "name": "idx_storeSku_barcode",
+            "unique": false,
+            "columnNames": [
+              "barcode"
+            ],
+            "createSql": "CREATE  INDEX `idx_storeSku_barcode` ON `${TABLE_NAME}` (`barcode`)"
+          },
+          {
+            "name": "idx_storeSku_catcode",
+            "unique": false,
+            "columnNames": [
+              "firstIcatCode",
+              "secondIcatCode",
+              "thirdIcatCode",
+              "fourthIcatCode"
+            ],
+            "createSql": "CREATE  INDEX `idx_storeSku_catcode` ON `${TABLE_NAME}` (`firstIcatCode`, `secondIcatCode`, `thirdIcatCode`, `fourthIcatCode`)"
+          }
+        ],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "skuattr",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `vendorId` INTEGER NOT NULL, `skuCode` TEXT, `tempId` INTEGER NOT NULL, `dicId` INTEGER NOT NULL, `attrId` INTEGER NOT NULL, `attrName` TEXT, `attrValue` TEXT, `attrFlag` INTEGER NOT NULL, `df` INTEGER NOT NULL, `createDate` TEXT, `modifyDate` TEXT, `version` INTEGER NOT NULL, `creator` TEXT, `mender` TEXT, `sattrid` INTEGER NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "vendorId",
+            "columnName": "vendorId",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "skuCode",
+            "columnName": "skuCode",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "tempId",
+            "columnName": "tempId",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "dicId",
+            "columnName": "dicId",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "attrId",
+            "columnName": "attrId",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "attrName",
+            "columnName": "attrName",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "attrValue",
+            "columnName": "attrValue",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "attrFlag",
+            "columnName": "attrFlag",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "df",
+            "columnName": "df",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "createDate",
+            "columnName": "createDate",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "modifyDate",
+            "columnName": "modifyDate",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "version",
+            "columnName": "version",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "creator",
+            "columnName": "creator",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "mender",
+            "columnName": "mender",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "sattrid",
+            "columnName": "sattrid",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [
+          {
+            "name": "idx_itemAttr_idcode",
+            "unique": false,
+            "columnNames": [
+              "vendorId",
+              "skuCode"
+            ],
+            "createSql": "CREATE  INDEX `idx_itemAttr_idcode` ON `${TABLE_NAME}` (`vendorId`, `skuCode`)"
+          }
+        ],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "skubatch",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `vendorId` INTEGER NOT NULL, `skuCode` TEXT, `batchNo` TEXT, `memo` TEXT, `df` INTEGER NOT NULL, `createDate` TEXT, `modifyDate` TEXT, `batchid` INTEGER NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "vendorId",
+            "columnName": "vendorId",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "skuCode",
+            "columnName": "skuCode",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "batchNo",
+            "columnName": "batchNo",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "memo",
+            "columnName": "memo",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "df",
+            "columnName": "df",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "createDate",
+            "columnName": "createDate",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "modifyDate",
+            "columnName": "modifyDate",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "batchid",
+            "columnName": "batchid",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [
+          {
+            "name": "idx_skuBatch_idCode",
+            "unique": false,
+            "columnNames": [
+              "vendorId",
+              "skuCode"
+            ],
+            "createSql": "CREATE  INDEX `idx_skuBatch_idCode` ON `${TABLE_NAME}` (`vendorId`, `skuCode`)"
+          }
+        ],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "skuimg",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `vendorId` INTEGER NOT NULL, `itemCode` TEXT, `skuCode` TEXT, `imgPath` TEXT, `imgFlag` INTEGER NOT NULL, `viewOrder` INTEGER NOT NULL, `usable` INTEGER NOT NULL, `df` INTEGER NOT NULL, `memo` TEXT, `createDate` TEXT, `modifyDate` TEXT, `version` INTEGER NOT NULL, `imgid` INTEGER NOT NULL, `isDown` INTEGER NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "vendorId",
+            "columnName": "vendorId",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "itemCode",
+            "columnName": "itemCode",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "skuCode",
+            "columnName": "skuCode",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "imgPath",
+            "columnName": "imgPath",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "imgFlag",
+            "columnName": "imgFlag",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "viewOrder",
+            "columnName": "viewOrder",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "usable",
+            "columnName": "usable",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "df",
+            "columnName": "df",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "memo",
+            "columnName": "memo",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "createDate",
+            "columnName": "createDate",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "modifyDate",
+            "columnName": "modifyDate",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "version",
+            "columnName": "version",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "imgid",
+            "columnName": "imgid",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "isDown",
+            "columnName": "isDown",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [
+          {
+            "name": "idx_skuImg_idCode",
+            "unique": false,
+            "columnNames": [
+              "vendorId",
+              "skuCode"
+            ],
+            "createSql": "CREATE  INDEX `idx_skuImg_idCode` ON `${TABLE_NAME}` (`vendorId`, `skuCode`)"
+          }
+        ],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "skuprimary",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `skuCode` TEXT)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "skuCode",
+            "columnName": "skuCode",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "skuunit",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `vendorId` INTEGER NOT NULL, `storeCode` TEXT, `skuCode` TEXT, `plusCode` TEXT, `unitType` INTEGER NOT NULL, `unit` TEXT, `unitNum` REAL NOT NULL, `salePrice` REAL NOT NULL, `weiPrice` REAL NOT NULL, `distPrice` REAL NOT NULL, `purchasePrice` REAL NOT NULL, `wholesalePrice` REAL NOT NULL, `deliverPrice` REAL NOT NULL, `vipPrice` REAL NOT NULL, `vipPrice1` REAL NOT NULL, `vipPrice2` REAL NOT NULL, `lowPrice` REAL NOT NULL, `score` REAL NOT NULL, `df` INTEGER NOT NULL, `createDate` TEXT, `modifyDate` TEXT)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "vendorId",
+            "columnName": "vendorId",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "storeCode",
+            "columnName": "storeCode",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "skuCode",
+            "columnName": "skuCode",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "plusCode",
+            "columnName": "plusCode",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "unitType",
+            "columnName": "unitType",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "unit",
+            "columnName": "unit",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "unitNum",
+            "columnName": "unitNum",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "salePrice",
+            "columnName": "salePrice",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "weiPrice",
+            "columnName": "weiPrice",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "distPrice",
+            "columnName": "distPrice",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "purchasePrice",
+            "columnName": "purchasePrice",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "wholesalePrice",
+            "columnName": "wholesalePrice",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "deliverPrice",
+            "columnName": "deliverPrice",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "vipPrice",
+            "columnName": "vipPrice",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "vipPrice1",
+            "columnName": "vipPrice1",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "vipPrice2",
+            "columnName": "vipPrice2",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "lowPrice",
+            "columnName": "lowPrice",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "score",
+            "columnName": "score",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "df",
+            "columnName": "df",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "createDate",
+            "columnName": "createDate",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "modifyDate",
+            "columnName": "modifyDate",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [
+          {
+            "name": "idx_skuUnit_vendorId",
+            "unique": false,
+            "columnNames": [
+              "vendorId"
+            ],
+            "createSql": "CREATE  INDEX `idx_skuUnit_vendorId` ON `${TABLE_NAME}` (`vendorId`)"
+          },
+          {
+            "name": "idx_skuUnit_storeCode",
+            "unique": false,
+            "columnNames": [
+              "storeCode"
+            ],
+            "createSql": "CREATE  INDEX `idx_skuUnit_storeCode` ON `${TABLE_NAME}` (`storeCode`)"
+          },
+          {
+            "name": "idx_skuUnit_plusCode",
+            "unique": false,
+            "columnNames": [
+              "plusCode"
+            ],
+            "createSql": "CREATE  INDEX `idx_skuUnit_plusCode` ON `${TABLE_NAME}` (`plusCode`)"
+          },
+          {
+            "name": "idx_skuUnit_skuCode",
+            "unique": false,
+            "columnNames": [
+              "skuCode"
+            ],
+            "createSql": "CREATE  INDEX `idx_skuUnit_skuCode` ON `${TABLE_NAME}` (`skuCode`)"
+          }
+        ],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "store",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `vendorId` INTEGER NOT NULL, `storeCode` TEXT, `storeName` TEXT, `organCode` TEXT, `storeType` INTEGER NOT NULL, `provinceCode` TEXT, `cityCode` TEXT, `regionCode` TEXT, `address` TEXT, `linkman` TEXT, `cellPhone` TEXT, `email` TEXT, `postcode` TEXT, `tel` TEXT, `fax` TEXT, `usable` INTEGER NOT NULL, `rental` REAL NOT NULL, `area` REAL NOT NULL, `df` INTEGER NOT NULL, `memo` TEXT, `createDate` TEXT, `modifyDate` TEXT, `version` INTEGER NOT NULL, `creator` TEXT, `mender` TEXT, `organName` TEXT)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "vendorId",
+            "columnName": "vendorId",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "storeCode",
+            "columnName": "storeCode",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "storeName",
+            "columnName": "storeName",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "organCode",
+            "columnName": "organCode",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "storeType",
+            "columnName": "storeType",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "provinceCode",
+            "columnName": "provinceCode",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "cityCode",
+            "columnName": "cityCode",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "regionCode",
+            "columnName": "regionCode",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "address",
+            "columnName": "address",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "linkman",
+            "columnName": "linkman",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "cellPhone",
+            "columnName": "cellPhone",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "email",
+            "columnName": "email",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "postcode",
+            "columnName": "postcode",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "tel",
+            "columnName": "tel",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "fax",
+            "columnName": "fax",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "usable",
+            "columnName": "usable",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "rental",
+            "columnName": "rental",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "area",
+            "columnName": "area",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "df",
+            "columnName": "df",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "memo",
+            "columnName": "memo",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "createDate",
+            "columnName": "createDate",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "modifyDate",
+            "columnName": "modifyDate",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "version",
+            "columnName": "version",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "creator",
+            "columnName": "creator",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "mender",
+            "columnName": "mender",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "organName",
+            "columnName": "organName",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [
+          {
+            "name": "idx_store_idCode",
+            "unique": false,
+            "columnNames": [
+              "vendorId",
+              "storeCode"
+            ],
+            "createSql": "CREATE  INDEX `idx_store_idCode` ON `${TABLE_NAME}` (`vendorId`, `storeCode`)"
+          },
+          {
+            "name": "idx_store_organCode",
+            "unique": false,
+            "columnNames": [
+              "organCode"
+            ],
+            "createSql": "CREATE  INDEX `idx_store_organCode` ON `${TABLE_NAME}` (`organCode`)"
+          }
+        ],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "syncdatatype",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `vendorId` INTEGER NOT NULL, `dbtype` INTEGER NOT NULL, `dbname` TEXT, `needflag` INTEGER NOT NULL, `syncCount` INTEGER NOT NULL, `createDate` TEXT, `modifyDate` TEXT, `creator` TEXT, `mender` TEXT)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "vendorId",
+            "columnName": "vendorId",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "dbtype",
+            "columnName": "dbtype",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "dbname",
+            "columnName": "dbname",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "needflag",
+            "columnName": "needflag",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "syncCount",
+            "columnName": "syncCount",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "createDate",
+            "columnName": "createDate",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "modifyDate",
+            "columnName": "modifyDate",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "creator",
+            "columnName": "creator",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "mender",
+            "columnName": "mender",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [
+          {
+            "name": "idx_syncDataType_vendorId",
+            "unique": false,
+            "columnNames": [
+              "vendorId"
+            ],
+            "createSql": "CREATE  INDEX `idx_syncDataType_vendorId` ON `${TABLE_NAME}` (`vendorId`)"
+          },
+          {
+            "name": "idx_syncDataType_dbtype",
+            "unique": false,
+            "columnNames": [
+              "dbtype"
+            ],
+            "createSql": "CREATE  INDEX `idx_syncDataType_dbtype` ON `${TABLE_NAME}` (`dbtype`)"
+          }
+        ],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "synclog",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `vendorId` INTEGER NOT NULL, `organCode` TEXT, `storeCode` TEXT, `posCode` TEXT, `dbtype` INTEGER NOT NULL, `syncTime` TEXT, `endTime` TEXT, `endTime2` TEXT, `syncTimeCount` INTEGER NOT NULL, `syncTimeCount2` INTEGER NOT NULL, `createDate` TEXT, `modifyDate` TEXT)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "vendorId",
+            "columnName": "vendorId",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "organCode",
+            "columnName": "organCode",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "storeCode",
+            "columnName": "storeCode",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "posCode",
+            "columnName": "posCode",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "dbtype",
+            "columnName": "dbtype",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "syncTime",
+            "columnName": "syncTime",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "endTime",
+            "columnName": "endTime",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "endTime2",
+            "columnName": "endTime2",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "syncTimeCount",
+            "columnName": "syncTimeCount",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "syncTimeCount2",
+            "columnName": "syncTimeCount2",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "createDate",
+            "columnName": "createDate",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "modifyDate",
+            "columnName": "modifyDate",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "systeminfo",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `vendorId` INTEGER NOT NULL, `backLoginLogo` TEXT, `backSysLogo` TEXT, `backIco` TEXT, `mobileLoginLogo` TEXT, `mobileSysLogo` TEXT, `posLoginLogo` TEXT, `posSysLogo` TEXT, `backName` TEXT, `vendorBackName` TEXT, `coNet` TEXT, `telNo` TEXT, `coFax` TEXT, `postCode` TEXT, `email` TEXT, `addr` TEXT, `posServiceTel` TEXT, `backServiceTel` TEXT, `copyRight` TEXT, `coName` TEXT, `usable` INTEGER NOT NULL, `df` INTEGER NOT NULL, `createDate` TEXT, `modifyDate` TEXT, `isDown` INTEGER NOT NULL, `posPrintLogo` TEXT, `qrcodePath` TEXT, `posExtendLogo` TEXT)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "vendorId",
+            "columnName": "vendorId",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "backLoginLogo",
+            "columnName": "backLoginLogo",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "backSysLogo",
+            "columnName": "backSysLogo",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "backIco",
+            "columnName": "backIco",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "mobileLoginLogo",
+            "columnName": "mobileLoginLogo",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "mobileSysLogo",
+            "columnName": "mobileSysLogo",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "posLoginLogo",
+            "columnName": "posLoginLogo",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "posSysLogo",
+            "columnName": "posSysLogo",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "backName",
+            "columnName": "backName",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "vendorBackName",
+            "columnName": "vendorBackName",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "coNet",
+            "columnName": "coNet",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "telNo",
+            "columnName": "telNo",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "coFax",
+            "columnName": "coFax",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "postCode",
+            "columnName": "postCode",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "email",
+            "columnName": "email",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "addr",
+            "columnName": "addr",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "posServiceTel",
+            "columnName": "posServiceTel",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "backServiceTel",
+            "columnName": "backServiceTel",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "copyRight",
+            "columnName": "copyRight",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "coName",
+            "columnName": "coName",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "usable",
+            "columnName": "usable",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "df",
+            "columnName": "df",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "createDate",
+            "columnName": "createDate",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "modifyDate",
+            "columnName": "modifyDate",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "isDown",
+            "columnName": "isDown",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "posPrintLogo",
+            "columnName": "posPrintLogo",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "qrcodePath",
+            "columnName": "qrcodePath",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "posExtendLogo",
+            "columnName": "posExtendLogo",
+            "affinity": "TEXT",
+            "notNull": false
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [
+          {
+            "name": "idx_systemInfo_vendorId",
+            "unique": false,
+            "columnNames": [
+              "vendorId"
+            ],
+            "createSql": "CREATE  INDEX `idx_systemInfo_vendorId` ON `${TABLE_NAME}` (`vendorId`)"
+          }
+        ],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "user",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `vendorId` INTEGER NOT NULL, `userType` INTEGER NOT NULL, `userName` TEXT, `pwd` TEXT, `realName` TEXT, `cellPhone` TEXT, `email` TEXT, `orgCode` TEXT, `storeCode` TEXT, `depCode` TEXT, `memo` TEXT, `userStatus` INTEGER NOT NULL, `df` INTEGER NOT NULL, `createDate` TEXT, `modifyDate` TEXT, `vendorName` TEXT, `discount` REAL NOT NULL, `storeDiscount` REAL NOT NULL, `bindFlag` INTEGER NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "vendorId",
+            "columnName": "vendorId",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "userType",
+            "columnName": "userType",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "userName",
+            "columnName": "userName",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "pwd",
+            "columnName": "pwd",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "realName",
+            "columnName": "realName",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "cellPhone",
+            "columnName": "cellPhone",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "email",
+            "columnName": "email",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "orgCode",
+            "columnName": "orgCode",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "storeCode",
+            "columnName": "storeCode",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "depCode",
+            "columnName": "depCode",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "memo",
+            "columnName": "memo",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "userStatus",
+            "columnName": "userStatus",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "df",
+            "columnName": "df",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "createDate",
+            "columnName": "createDate",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "modifyDate",
+            "columnName": "modifyDate",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "vendorName",
+            "columnName": "vendorName",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "discount",
+            "columnName": "discount",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "storeDiscount",
+            "columnName": "storeDiscount",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "bindFlag",
+            "columnName": "bindFlag",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [
+          {
+            "name": "idx_vendorUser_userName",
+            "unique": true,
+            "columnNames": [
+              "userName"
+            ],
+            "createSql": "CREATE UNIQUE INDEX `idx_vendorUser_userName` ON `${TABLE_NAME}` (`userName`)"
+          },
+          {
+            "name": "idx_vendorUser_venderId",
+            "unique": false,
+            "columnNames": [
+              "vendorId"
+            ],
+            "createSql": "CREATE  INDEX `idx_vendorUser_venderId` ON `${TABLE_NAME}` (`vendorId`)"
+          }
+        ],
+        "foreignKeys": []
+      },
+      {
+        "tableName": "userrole",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `userName` TEXT, `roleId` INTEGER NOT NULL, `df` INTEGER NOT NULL, `createDate` TEXT, `modifyDate` TEXT, `vendorId` INTEGER NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "userName",
+            "columnName": "userName",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "roleId",
+            "columnName": "roleId",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "df",
+            "columnName": "df",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "createDate",
+            "columnName": "createDate",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "modifyDate",
+            "columnName": "modifyDate",
+            "affinity": "TEXT",
+            "notNull": false
+          },
+          {
+            "fieldPath": "vendorId",
+            "columnName": "vendorId",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "columnNames": [
+            "id"
+          ],
+          "autoGenerate": true
+        },
+        "indices": [
+          {
+            "name": "idx_venderUserRole_userName",
+            "unique": false,
+            "columnNames": [
+              "userName"
+            ],
+            "createSql": "CREATE  INDEX `idx_venderUserRole_userName` ON `${TABLE_NAME}` (`userName`)"
+          },
+          {
+            "name": "idx_venderUserRole_roleId",
+            "unique": false,
+            "columnNames": [
+              "roleId"
+            ],
+            "createSql": "CREATE  INDEX `idx_venderUserRole_roleId` ON `${TABLE_NAME}` (`roleId`)"
+          }
+        ],
+        "foreignKeys": []
+      }
+    ],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, \"27adb51357e7f879505282b04f9f00c6\")"
+    ]
+  }
+}
